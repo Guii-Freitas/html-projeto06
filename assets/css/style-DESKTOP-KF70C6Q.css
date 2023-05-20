@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+
+/* RESET CSS */
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#banner {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(../img/img1.jpg);
+    background-size: cover;
+    height: 100vh;
+
+}
+
+#banner img {
+
+    width: 8.7rem;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+
+}
+
+#banner .texto-logo {
+
+    text-align: center;
+    color: white;
+    padding-top: 18rem;
+
+}
+
+#banner .texto-logo h1 {
+
+    font-size: 8.1rem;
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+#banner .texto-logo p {
+
+    font-size: 1.2rem;
+    font-style: italic;
+
+}
+
+#banner .texto-logo .btn-banner {
+
+    margin: 4.3rem auto 0;
+
+}
+
+#banner .texto-logo .btn-banner a {
+
+    width: 9.3rem;
+    display: inline-block;
+    margin: 0 .7rem;
+    padding: .8rem 0;
+    color: white;
+    border: .5px solid white;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+
+}
+
+#banner .texto-logo .btn-banner a:hover {
+
+    color: black;
+
+}
+
+#banner .texto-logo .btn-banner a span {
+
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: all .5s ease;
+
+}
+
+#banner .texto-logo .btn-banner a:hover span {
+
+    width: 100%;
+
+}
+
+#sideNav {
+
+    width: 15.6rem;
+    height: 100vh;
+    position: fixed;
+    right: -15.6rem;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+    transition: .5s;
+
+}
+
+#sideNav nav ul li{
+
+    margin: 3.1rem 1.2rem;
+
+}
+
+#sideNav nav ul li a{
+
+    color: white;
+
+}
+
+#menuBtn{
+
+    width: 3rem;
+    height: 3rem;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 1.8rem;
+    top: 1.2rem;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+
+} 
+
+#menuBtn img{
+
+    width: 1.7rem;
+    margin-top: .7rem;
+
+}
+
+
+#recursos{
+
+    width: 100%;
+    height: 100vh;
+    padding: 4.3rem 0;
+
+}
+
+#recursos .titulo-texto{
+
+    text-align: center;
+    padding-bottom: 4.3rem;
+
+}
+
+#recursos .titulo-texto p {
+
+    margin: auto;
+    font-size: 1.2rem;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+
+}
+
+#recursos .titulo-texto p::after{
+
+    content: '';
+    width: 3.1rem;
+    height: 2.2rem;
+    background: linear-gradient(#019587, #fff);
+    position: absolute;
+    top: -1.2rem;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+
+#recursos .titulo-texto h1{
+
+    font-size: 3.1rem;
+
+}
+
+#recursos .recursos-box{
+
+    display: flex;
+    justify-content: left;
+    padding-left: 15rem;
+
+}
+
+#recursos .img-recursos{
+
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 40rem;
+    padding-right: 20rem;
+    position: relative;
+
+}
+
+#recursos .img-recursos img{
+
+    border-radius: 15px;
+
+}
+
+.img-recursos::before{
+
+    content: "";
+    width: 425px;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5)15%, #009688);
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 770px){
+
+    .texto-logo h1{
+
+        font-size: 2.75rem;
+
+    }
+
+    .btn-banner a{
+
+        display: block;
+        margin: 1.2rem auto;
+
+    }
+
+}
